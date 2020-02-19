@@ -1,3 +1,10 @@
+git log ---> shows all commits
+git log -p : shows what content is modified with the commits
+git log -p -3: shows what content is modified with the 3 commits
+rm -rf .git  ---> deletes all git repository
+git clone  URL folder_name : downloads project from a remote server 
+
+
 .gitignore
 
 
@@ -9,4 +16,64 @@ dir/      --->> ignores all folders by the name dir
 /dir/      --->> ignores only outside folder by the name dir
 also you ca specify path for any specific file to untrack(ignore)
 
+
+lecture 8:
+
+git fiff                : compares files between working directory and staging dirctory
+git diff --staged		: compares last commit with current staging area
+
+
+lecture 9: skipping the staging area
+
+git commit -a -m "comming without staging "   : commits all tracked files
 	
+lecture 10: 
+
+git rm file.txt : deletes file.txt and stages also automatically and now u just commit
+// renaming and moving are basically same operations in linux
+git mv  first.txt FIRST_FILE.txt  : renames file.txt and stages also automatically and now u just commit
+
+git rm --cached file.txt  : stops tracking that file, file gets delete for git but not in rality.
+
+
+lecture 11:
+
+git log ---> shows all commits
+git log -p : shows what content is modified with the commits
+git log -p -3: shows what content is modified with the 3 commits
+
+git log --stat: gives short description about what happened in the commits.
+
+git log --pretty=oneline : shows all commits in one line.
+
+git log --pretty=short : shows commit, author and msg
+
+git log --pretty=full : shows commited msg, commited by, and author as well
+
+git log --since=2.days : shows commits of last two days
+git log --since=2.weeks : shows commits of last two weeks
+git log --since=2.months : shows commits of last two months
+git log --since=2.years : shows commits of last two years
+
+git log--pretty=format:"%h -- %an"  : hash and author name
+
+git log--pretty=format:"%h -- %ae"  : hash and author email
+
+
+git log -p -1 :  shows 1 commit
+git commit --ammend  : to add if you want to modify the last commit and add to it
+
+
+lecture 12: unstaging & unmodifiing a file
+
+git restore --staged first_renamed.txt  :  
+git checkout -- first_renamed.txt  : 
+
+git checkout -f : all modified changes are removed. makes your current working directorty as of your last commit(can be dangerous sometime)
+
+lecture 13: working with remote repositories
+
+github is just a website which hosts git repositories.
+
+git remote add origin URL_LINK  : origin = URL_LINK
+we are just naming the names of URL to origin
