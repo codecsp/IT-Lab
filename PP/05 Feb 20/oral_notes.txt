@@ -1,0 +1,1 @@
+ 1. which thread is executing is  =  somp_get_thread_num();

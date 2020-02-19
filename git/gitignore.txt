@@ -1,0 +1,12 @@
+.gitignore
+
+
+content of .gitignore file:  
+
+error.log   ->>> ignores only error.log
+*.log      --->> ignores all .log file
+dir/      --->> ignores all folders by the name dir
+/dir/      --->> ignores only outside folder by the name dir
+also you ca specify path for any specific file to untrack(ignore)
+
+	
