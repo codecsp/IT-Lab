@@ -77,3 +77,20 @@ github is just a website which hosts git repositories.
 
 git remote add origin URL_LINK  : origin = URL_LINK
 we are just naming the names of URL to origin
+
+lecture 14: setting alias
+
+how to use st for status
+
+git config --commit --global alias.st status
+git config --global alias.unstage 'restore --staged --'
+
+lecture 15: creating and switching branches
+
+ git checkout -b develop: create a new branch and switch to it (-b is present to create a new branch)
+
+ git checkout master  : go back to master branch
+
+ git branch : all branches are shown here
+
+ 
